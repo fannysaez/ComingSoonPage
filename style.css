@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #d9a764;
+  background: no-repeat center / cover url(/assets/salon-chocolat.avif);
+  justify-content: space-between;
+}
+.coming-soon-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted rgb(204, 204, 204);
+  box-shadow: 0 4px 8px rgb(49, 49, 49);
+  background-color: rgba(2, 2, 2, 0.527);
+  border-radius: 25px 0px 25px 0px;
+}
+
+.logocacao {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.logocacao img {
+  width: 300px;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-bottom: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+p {
+  font-size: 1.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+  color: #f1edeb;
+  letter-spacing: 2px;
+  line-height: 35px;
+  text-align: center;
+  padding: 0px 40px;
+}
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  width: 300px;
+  max-width: 80%;
+  color: #431919;
+  font-style: italic;
+  text-align: center;
+}
+/* Bouton formulaire */
+.email-form button {
+  padding: 10px 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  background-color: #db9e4d;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #b48650;
+}
+
+@media screen and (max-width: 1100px) {
+  section {
+    flex-direction: column;
+    height: 100%;
+  }
+  section .coming-soon-container {
+    width: 100%;
+    height: 500px;
+    order: 2;
+  }
+  section .logocacao {
+    width: 100%;
+    height: 550px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .email-form {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .email-form input[type="email"] {
+    width: 200px;
+  }
+  p {
+    font-size: 18px;
+    padding: 0px 20px;
+    line-height: 30px;
+  }
+  .logocacao img {
+    width: 300px;
+  }
+}
