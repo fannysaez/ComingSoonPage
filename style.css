@@ -8,7 +8,7 @@ section {
   height: 100vh;
   font-family: Arial, sans-serif;
   color: #d9a764;
-  background: no-repeat center / cover url(/assets/salon-chocolat.avif);
+  background: no-repeat center / cover url(./assets/salon-chocolat.avif);
   justify-content: space-between;
 }
 .coming-soon-container {
